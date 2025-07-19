@@ -39,6 +39,24 @@ This project simulates a heater control system using ESP32 and a temperature sen
 | > 70.0                 | OVERHEAT         | OFF        |
 | Else                   | IDLE             | OFF        |
 
++----------------+
+|  DS18B20       |
+| (Temp Sensor)  |
++-------+--------+
+        |
+        v
++-------+--------+       +------------------+
+|     ESP32      |------>| LCD (I2C)        |
+|  Heater Logic  |       | Temperature View |
+|  BLE Advertise |       +------------------+
++-------+--------+
+        |
+        v
++----------------+
+| Heater (LED)   |
++----------------+
+
+
 ## 🧪 Simulation (Wokwi)
 
 You can simulate this project online via Wokwi. Link:  
